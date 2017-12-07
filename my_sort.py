@@ -12,8 +12,8 @@ def quick_sort(arr):
 	if arr:
 		head, *tail = arr
 		return quick_sort([x for x in tail if x <= head]) + \
-				[head] + \
-				quick_sort([x for x in tail if x > head])
+		[head] + \
+		quick_sort([x for x in tail if x > head])
 	return []
 
 if __name__ == "__main__":
